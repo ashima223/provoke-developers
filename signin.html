@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkblue;
+        }
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group button {
+            background-color: darkblue;
+            color: #fff;
+            padding: 10px 120px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .signup-link {
+            text-align: center;
+        }
+        .signup-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="login">Login to your account</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" onclick="Myfunction()">Login</button>
+            </div>
+        </form>
+        <p class="signup-link">New to MyApp? <a href="index.html">Sign Up</a></p>
+    </div>
+    <script>
+        function Myfunction(){
+          location.href="pricing.html";
+        }
+      </script>
+</body>
+</html>
